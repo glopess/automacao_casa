@@ -21,7 +21,7 @@ O projeto é composto por:
 
 ## Funcionamento
 
-1.[Controlador de Leitura do Ambiente](https://github.com/glopess/automacao_casa/blob/main/leitura-ambiente.ino):
+1. [Controlador de Leitura do Ambiente](https://github.com/glopess/automacao_casa/blob/main/leitura-ambiente.ino):
 - Inicia com os valores default das variaveis `Temperatura Ideal` (25) e `Umidade Ideal` (45);
 - Realiza a assinatura dos topicos `tempIdeal` e `umidIdeal` do MQTT Broker para atualizar as variaveis sempre que uma mensagem dos respectivos topicos for recebida;
 - A cada 7 segundos realiza a leitura de temperatura e de umidade do sensor DHT11;
