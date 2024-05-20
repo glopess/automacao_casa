@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <WiFi.h>
 #include <PubSubClient.h> 
 #include "Esp32MQTTClient.h" 
@@ -7,7 +6,7 @@
 
 const char* ssid = "";
 const char* password = "";
-const char* mqtt_server = "192.168.1.110";
+const char* mqtt_server = "";
 
 #define DHTTYPE DHT11
 #define DHTPIN 5
@@ -49,7 +48,7 @@ void callback(char* topic, byte* payload, unsigned int length)
   Serial.println();
 
   if(strcmp("tempIdeal",topic) == 0){
-    Serial.print("Atualizando UmidIdeal. ");
+    Serial.print("Atualizando TempIdeal. ");
     Serial.print(tempIdeal);
     Serial.print(" -> ");
     tempIdeal = atof(str);
@@ -117,7 +116,7 @@ void loop()
   long now = millis();
 
 if (now - lastTemp > 7000) {
-     lastTemp = now;
+    lastTemp = now;
 
     float t = dht.readTemperature();
     float h = dht.readHumidity();
@@ -152,7 +151,7 @@ if (now - lastTemp > 7000) {
         publicarMsg("switchUmid", "1");
       }
 
-      if(countLoopUmid >= 10 && h > (umidIdeal - 2)){
+      if(countLoopUmid >= 10 && h > (umidIdeal + 2)){
         publicarMsg("switchUmid", "0");
         countLoopUmid = 0;
       }
