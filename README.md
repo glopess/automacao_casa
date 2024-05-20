@@ -8,8 +8,6 @@ O projeto é composto por:
 
 ## Hardware 
 
-- Protoboard 400 pontos
-
 1. Controlador de Leitura do Ambiente:
 - Placa DOIT ESP32 DevKit - WiFi / Bluetooth
 - Sensor de temperatura e umidade do ar DHT11
@@ -17,6 +15,8 @@ O projeto é composto por:
 2. Controlador Eletronicos:
 - Placa DOIT ESP32 DevKit - WiFi / Bluetooth
 - 2 x Relés 5v
+
+- Protoboard 400 pontos
 
 
 ## Funcionamento
@@ -34,7 +34,13 @@ O projeto é composto por:
 2. [Controlador Eletronicos](https://github.com/glopess/automacao_casa/blob/main/controlador-eletronicos.ino):
 - Realiza a assinatura dos topicos `switchAr` e `switchUmid` do MQTT Broker para atualizar o estados dos respectivos relés sempre que uma mensagem for recebida;
 
-3. Dashboard Node-RED:
+3. [Dashboard Node-RED](https://github.com/glopess/automacao_casa/blob/main/node-red%20flows.json):
 - Recebe e exibe os valores recebidos dos topicos `umidade`, `temperatura`, `umidIdeal`, `tempIdeal`, `switchAr`,`switchUmid`;
 - Publica nos tópicos  `umidIdeal`, `tempIdeal` para enviar ao Controlador de Leitura os valores atualizados;
 - Publica nos tópicos `switchAr`,`switchUmid` para enviar ao Controlador Eletronicos os comandos de ligar/desligar do ar e do umidificador;
+
+## Referencias:
+ - [ESP32_AzureIoT_Arduino](https://github.com/VSChina/ESP32_AzureIoT_Arduino)
+ - [HiveMQ](https://www.hivemq.com/company/get-hivemq/)
+ - [Node-RED](https://nodered.org/docs/faq/interacting-with-arduino#installation)
+ - [PubSubClient](https://github.com/knolleary/pubsubclient)
