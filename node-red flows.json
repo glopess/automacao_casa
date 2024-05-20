@@ -1,0 +1,664 @@
+[
+    {
+        "id": "6363b24fa9bc66ed",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "63e6672a0dd1d19e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "0.0.0.0",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "19a16bb708a87be3",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "127.0.0.1",
+        "port": "1884",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "24cf13f1997e07c8",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "34904984f878e3eb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "928e9b641f0f4faabfff9ddd8efefdf4.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "24cf13f1997e07c8",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "64f15a891f8ce60f",
+        "type": "ui_group",
+        "name": "Casa",
+        "tab": "8a966e13fa598106",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8a966e13fa598106",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a6a37ee72bf14469",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b9ba17218234e9f4",
+        "type": "mqtt in",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "63e6672a0dd1d19e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 830,
+        "y": 180,
+        "wires": [
+            [
+                "2f0a9c7d8b93a88b",
+                "2ee0424e14895120"
+            ]
+        ]
+    },
+    {
+        "id": "7ad064cfb894fd56",
+        "type": "mqtt in",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "umidade",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "63e6672a0dd1d19e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 760,
+        "y": 300,
+        "wires": [
+            [
+                "85d6c69c37432a38",
+                "ad953938d8085a97"
+            ]
+        ]
+    },
+    {
+        "id": "85d6c69c37432a38",
+        "type": "debug",
+        "z": "6363b24fa9bc66ed",
+        "name": "Umidade",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 970,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "2f0a9c7d8b93a88b",
+        "type": "debug",
+        "z": "6363b24fa9bc66ed",
+        "name": "Temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8fa315b59606a03f",
+        "type": "mqtt out",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "switchAr",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63e6672a0dd1d19e",
+        "x": 1160,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3115418ca7cfd93f",
+        "type": "mqtt out",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "switchUmid",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63e6672a0dd1d19e",
+        "x": 970,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "44ebf6815db13651",
+        "type": "ui_switch",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "label": "Ar",
+        "tooltip": "",
+        "group": "64f15a891f8ce60f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "switchAr",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 870,
+        "y": 420,
+        "wires": [
+            [
+                "8fa315b59606a03f"
+            ]
+        ]
+    },
+    {
+        "id": "d1b75956bd21a809",
+        "type": "mqtt in",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "switchAr",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "63e6672a0dd1d19e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 660,
+        "y": 420,
+        "wires": [
+            [
+                "44ebf6815db13651",
+                "bd13432a3c75f370"
+            ]
+        ]
+    },
+    {
+        "id": "70100e2e6608c353",
+        "type": "ui_switch",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "label": "Umidificador",
+        "tooltip": "",
+        "group": "64f15a891f8ce60f",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "switchUmid",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 790,
+        "y": 600,
+        "wires": [
+            [
+                "3115418ca7cfd93f"
+            ]
+        ]
+    },
+    {
+        "id": "d29310076b441454",
+        "type": "ui_text_input",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "label": "Temperatura Ideal",
+        "tooltip": "",
+        "group": "64f15a891f8ce60f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "tempIdeal",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 850,
+        "y": 80,
+        "wires": [
+            [
+                "12f94e6d7436423b"
+            ]
+        ],
+        "icon": "font-awesome/fa-sun-o"
+    },
+    {
+        "id": "12f94e6d7436423b",
+        "type": "mqtt out",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "tempIdeal",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63e6672a0dd1d19e",
+        "x": 1100,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "06c64322a3554509",
+        "type": "ui_text_input",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "label": "Umidade Ideal",
+        "tooltip": "",
+        "group": "64f15a891f8ce60f",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "umidIdeal",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 820,
+        "y": 680,
+        "wires": [
+            [
+                "b3e013c2b197a901"
+            ]
+        ],
+        "icon": "node-red/timer.svg"
+    },
+    {
+        "id": "b3e013c2b197a901",
+        "type": "mqtt out",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "umidIdeal",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "63e6672a0dd1d19e",
+        "x": 1060,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2ee0424e14895120",
+        "type": "ui_gauge",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "group": "64f15a891f8ce60f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura Ambiente",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "15",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1080,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ad953938d8085a97",
+        "type": "ui_gauge",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "group": "64f15a891f8ce60f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade Ambiente",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b62632bf155cef4f",
+        "type": "mqtt in",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "switchUmid",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "63e6672a0dd1d19e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 610,
+        "y": 600,
+        "wires": [
+            [
+                "70100e2e6608c353"
+            ]
+        ]
+    },
+    {
+        "id": "912693695d99a98d",
+        "type": "mqtt in",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "tempIdeal",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "63e6672a0dd1d19e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 640,
+        "y": 80,
+        "wires": [
+            [
+                "d29310076b441454"
+            ]
+        ]
+    },
+    {
+        "id": "a46e3d8398e14f92",
+        "type": "mqtt in",
+        "z": "6363b24fa9bc66ed",
+        "name": "",
+        "topic": "umidIdeal",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "63e6672a0dd1d19e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 600,
+        "y": 680,
+        "wires": [
+            [
+                "06c64322a3554509"
+            ]
+        ]
+    },
+    {
+        "id": "bd13432a3c75f370",
+        "type": "debug",
+        "z": "6363b24fa9bc66ed",
+        "name": "switchAr",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 380,
+        "wires": []
+    }
+]
